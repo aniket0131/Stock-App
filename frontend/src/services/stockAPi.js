@@ -1,6 +1,6 @@
 const apiUrlIndiaBse = process.env.REACT_APP_STOCK_INDIA_BSE_URL;
 const apiUrlWiproBse = process.env.REACT_APP_STOCK_WIPRO_BSE_URL;
-const apiUrlIbmBse = process.env.REACT_APP_STOCK_TSCO_BSE_URL;
+const apiUrlTSCOBse = process.env.REACT_APP_STOCK_TSCO_BSE_URL;
 
 console.log(apiUrlIndiaBse,"apiUrlIndiaBse ");
 // Fetch Reliance stock data
@@ -18,8 +18,8 @@ export const fetchWiproStockDetails = async () => {
   };
 
   // Fetch Wipro stock data
-export const fetchIbmStockDetails = async () => {
-    const response = await fetch(apiUrlIbmBse);
+export const fetchTSCOStockDetails = async () => {
+    const response = await fetch(apiUrlTSCOBse);
     const data = await response.json();
     return data;
   };
