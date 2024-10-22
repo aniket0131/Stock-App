@@ -9,7 +9,11 @@ const LoginPage = () => {
   const navigate = useNavigate();
   const { login } = useAuth();
 
+<<<<<<< HEAD
   //Hardcoded credentials for login
+=======
+ 
+>>>>>>> 9f4db9f (changes)
   const validUsername = 'user123';
   const validPassword = 'password123';
 

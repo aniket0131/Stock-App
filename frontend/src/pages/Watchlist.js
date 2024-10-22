@@ -12,7 +12,11 @@ const Watchlist = () => {
     navigate(`/stock/${symbol}`);
   };
 
+<<<<<<< HEAD
   // Helper function to get today's high and low from stockData
+=======
+
+>>>>>>> 9f4db9f (changes)
   const getTodaysHighLow = () => {
     if (!stockData || !stockData["Time Series (Daily)"]) {
       return {};

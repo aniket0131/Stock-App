@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import React, { useContext, useEffect, useState } from 'react';
 // import { useParams } from 'react-router-dom';
 // import { StockContext } from '../Context/StockContext';
@@ -72,6 +73,8 @@
 // };
 
 // export default StockDetails;
+=======
+>>>>>>> 9f4db9f (changes)
 
 import React, { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // src/pages/TopGainersLosers.js
+=======
+
+>>>>>>> 9f4db9f (changes)
 import React, { useEffect, useState } from 'react';
 
 const TopGainersLosers = () => {
@@ -18,7 +22,11 @@ const TopGainersLosers = () => {
     fetchStockData();
   }, []);
 
+<<<<<<< HEAD
   // Helper function to get the top 5 stocks
+=======
+
+>>>>>>> 9f4db9f (changes)
   const getTopFive = (arr) => arr.slice(0, 5);
 
   return (

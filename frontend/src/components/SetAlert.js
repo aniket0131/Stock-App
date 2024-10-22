@@ -2,7 +2,11 @@ import React, { useState, useEffect, useContext } from 'react';
 import { StockContext } from '../Context/StockContext';
 
 const SetAlert = () => {
+<<<<<<< HEAD
   const { setCurrentPrices, setAlertMessage } = useContext(StockContext); 
+=======
+  const { setCurrentPrices, setAlertMessage , alertMessage } = useContext(StockContext); 
+>>>>>>> 9f4db9f (changes)
   const [symbol, setSymbol] = useState('');
   const [threshold, setThreshold] = useState('');
   const [alertSet, setAlertSet] = useState(false);
@@ -31,7 +35,11 @@ const SetAlert = () => {
 
       if (openPrice === alertThreshold || highPrice === alertThreshold || lowPrice === alertThreshold || closePrice === alertThreshold) {
         setAlertMessage(`Price alert: ${symbol} has reached the threshold of ${threshold}.`);
+<<<<<<< HEAD
         setAlertSet(false); // Reset after the alert
+=======
+        setAlertSet(false); 
+>>>>>>> 9f4db9f (changes)
       }
       setCurrentPrices({ open: openPrice, high: highPrice, low: lowPrice, close: closePrice });
 
@@ -45,7 +53,11 @@ const SetAlert = () => {
     if (alertSet) {
       const interval = setInterval(() => {
         checkPrice();
+<<<<<<< HEAD
       }, 60000); //for every minute
+=======
+      }, 60000); 
+>>>>>>> 9f4db9f (changes)
 
       return () => clearInterval(interval); 
     }
@@ -88,6 +100,10 @@ const SetAlert = () => {
       >
         Set Alert
       </button>
+<<<<<<< HEAD
+=======
+      <p className="text-gray-500">{alertMessage}</p>
+>>>>>>> 9f4db9f (changes)
     </div>
   );
 };
